@@ -1,3 +1,7 @@
 <div class="container">
-  <h1>SPIN THE COCKTAIL</h1>
+  <div><%= image_tag "logo.png", class: "logo" %></div>
+  <ul>
+    <% @cocktails.each do |cocktail| %>
+      <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+    <% end %>
 </div>
