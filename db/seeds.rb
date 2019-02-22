@@ -3,6 +3,13 @@ require 'json'
 
 # TODO: Write a seed to insert 100 posts in the database
 
+puts 'Cleaning Doses database...'
+Dose.destroy_all
+
+puts 'Finished with Doses database!'
+
+puts '####################################'
+
 puts 'Cleaning Ingredients database...'
 Ingredient.destroy_all
 

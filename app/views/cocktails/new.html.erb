@@ -1,2 +1,4 @@
-<h1>Cocktails#new,</h1>
-<p>Find me in app/views/cocktails/new,.html.erb</p>
+<div class="container">
+  <%= render 'form', cocktail: @cocktail %>
+  <div><%= cl_image_tag("new_cocktail", class: "main-images") %></div>
+</div>

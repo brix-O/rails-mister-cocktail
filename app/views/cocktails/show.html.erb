@@ -1,2 +1,4 @@
-<h1>Cocktails#show,</h1>
-<p>Find me in app/views/cocktails/show,.html.erb</p>
+<div class="container">
+  <div><%= cl_image_tag @cocktail.photo, class: "main-photos" %></div>
+  <h2 class="cocktails-name"><%= @cocktail.name %></h2>
+</div>

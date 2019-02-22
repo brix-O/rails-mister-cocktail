@@ -1,7 +1,9 @@
 <div class="container">
-  <div><%= cl_image_tag("logo", class: "logo") %></div>
+  <div><%= cl_image_tag("logo", class: "main-images") %></div>
   <ul>
     <% @cocktails.each do |cocktail| %>
-      <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+      <h2 class="cocktails-name"><%= link_to cocktail.name,cocktail_path(cocktail), class: "cocktail-link" %></h2>
     <% end %>
+    <button type="button" class="btn btn-info"><%= link_to "Add a new cocktail", new_cocktail_path %></button>
+  </ul>
 </div>
